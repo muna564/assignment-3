@@ -50,5 +50,333 @@
       };
     </script>
   </head>
-  <body class="font-lato"></body>
+  <body class="font-lato">
+    <header>
+      <!-- nav section -->
+      <nav
+        class="max-w-6xl mx-auto my-10 py-5 px-8 md:px16 lg:px24 lg:bg-[#F85559] lg:rounded-full"
+      >
+        <div class="navbar flex flex-row-reverse lg:flex-row gap-x-20 lg:gap-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+              <ul
+                class="menu text-lg text-white font-medium menu-horizontal px-1 hidden lg:flex"
+              >
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center gap-3">
+            <img src="./images/logo.png" alt="" />
+            <h1 class="lg:text-white text-2xl lg:text-4xl font-bold">
+              Fruit Burst
+            </h1>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <form class="bg-gray-300 rounded-full relative">
+              <input
+                class="w-full h-full rounded-full block text-xs font-normal p-5 border-none"
+                placeholder="Search here"
+              />
+              <button
+                class="absolute top-0 right-0 w-12 h-full rounded-3xl cursor-pointer border-none bg-none text-lg"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="max-w-6xl mx-auto my-10 py-5 px-8 md:px16 lg:px24">
+        <div class="carousel w-full">
+          <!-- slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-white">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn btn-error text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner2.png)"
+            >
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-white">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn btn-error text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner3.png)"
+            >
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-white">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn btn-error text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner4.png)"
+            >
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-white">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn btn-error text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- deal of the title section -->
+      <section class="max-w-6xl mx-auto my-10 py-5 px-8 md:px16 lg:px24">
+        <div class="flex">
+          <div class="flex-1">
+            <h1 class="text-2xl lg:text-4xl font-bold mb-5">Deal of the day</h1>
+            <p class="w-[600px] h-[50px]">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex-2">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 29"></span>
+                  </span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+                days
+              </div>
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 15"></span>
+                  </span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 25"></span>
+                  </span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+                min
+              </div>
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 08"></span>
+                  </span>
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- deal of the section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-20">
+          <!-- card-1 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="..." class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="flex text-[#FBC0A8]">
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+              </div>
+              <div class="card-actions">
+                <button class="btn text-[#F85559]">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit7.png" alt="..." class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Orange</p>
+              <div class="flex text-[#FBC0A8]">
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+              </div>
+              <div class="card-actions">
+                <button class="btn text-[#F85559]">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit8.png" alt="..." class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Red Dragon</p>
+              <div class="flex text-[#FBC0A8]">
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+              </div>
+              <div class="card-actions">
+                <button class="btn text-[#F85559]">Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit9.png" alt="..." class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Banana</p>
+              <div class="flex text-[#FBC0A8]">
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+              </div>
+              <div class="card-actions">
+                <button class="btn text-[#F85559]">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- see all btn -->
+      <section class="max-w-6xl mx-auto my-10 py-5 px-8 md:px16 lg:px24">
+        <div class="text-center">
+          <button class="btn btn-error">See All</button>
+        </div>
+      </section>
+
+      <!-- meet the team section -->
+    </main>
+    <footer></footer>
+  </body>
 </html>
